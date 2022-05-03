@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf8">
+		<title> Top Heroes - Dota 2 Meta Analysis </title>
+		<link href="stylesheet.css" rel="stylesheet">
+		<link rel="icon" href="psionictrap.png">
+	</head>
+	
+	<body>
+	
+	<header>
+		<h1>Dota 2 Meta Analysis</h1>
+		<nav>
+		
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li class="active"><a href="topheroes.html">Top Heroes</a></li>
+				<li><a href="nicheheroes.html">Niche Heroes</a></li>
+				<li><a href="overratedheroes.html">Overrated Heroes</a></li>
+				<li><a href="firstpicks.html">First Picks</a></li>
+				<li><a href="lastpicks.html">Last Picks</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		
+		</nav>
+	</header>
+	
+	<main>
+		<section class="description">
+			<article>
+				<h2>Top Heroes</h2>
+				<p>
+				These are the top heroes of the analysed matches in game version 7.31b.
+				Each hero's "rating" is a Wilson score rating metric calculated to take both
+				winrate and number of picks into account.
+				</p>
+
+				<p>Popular heroes with more than 52% winrate </p>
+				</p>
+			</article>
+		</section>
+		
+	
+	<div  class="sub-table" id="toptable">
+		<h3>Top Heroes</h3>	
+		<iframe id="all" src="tables/table2output.html" height=630, width=570>
+			Your browser doesn't support the iframe tag to display this table.
+		</iframe>
+	</div>
+	
+	<div class="graph">
+		
+		<h3 id="graph-title">Top heroes by winrate</h3>
+		<img id="graph-img" src="tables/topheadplot.png" alt="Statistics Graph">
+		
+	</div>
+	
+	</main>
+	
+	<footer>
+		<p>Made by Nick Papoutsakis</p>
+		<p>Dota 2 is a registered trademark of Valve Corporation</p>
+		<p>Match data acquired with the help of Opendota</p>
+	</footer>
+	</body>
+	
+</html>
