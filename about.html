@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf8">
+		<title> Summary - Dota 2 Meta Analysis </title>
+		<link href="stylesheet.css" rel="stylesheet">
+		<link rel="icon" href="psionictrap.png">
+	</head>
+	
+	<body>
+	
+	<header>
+		<h1>Dota 2 Meta Analysis</h1>
+		<nav>
+		
+			<ul id="navigation">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="topheroes.html">Top Heroes</a></li>
+				<li><a href="nicheheroes.html">Niche Heroes</a></li>
+				<li><a href="overratedheroes.html">Overrated Heroes</a></li>
+				<li><a href="firstpicks.html">First Picks</a></li>
+				<li><a href="lastpicks.html">Last Picks</a></li>
+				<li class="active"><a href="about.html">About</a></li>
+			</ul>
+		
+		</nav>
+	</header>
+	
+	<main>
+		<section class="description" id="About">
+			<article>
+				<h2>About / FAQ</h2>
+				<p>
+				This is a website to display various summary statistics for Dota 2 heroes,
+				allowing the identification of characteristics and trends of the metagame.
+				Each page displays a table containing the statistics of each hero in that
+				metric, along with associated graphs that focus on the top 10 heroes of each metric.
+				</p>
+				<p>
+				<strong> Where does the data come from? </strong>
+				- Data is downloaded from public Dota 2 matches played on official servers, in 
+				ranked and unranked game lobbies. Acquired with the help of the Opendota API.
+				</p>
+				
+				<p>
+				<strong> Is the data from a specific rank or skill bracket? </strong>
+				- I did not wish to only examine high MMR/Immortal rank data, as the majority of Dota 2
+				 games are played in ranks lower than that. Dota 2 match data no longer contains the usual 
+				 "Normal/High/Very High" skill variable that was determined by Valve, so finding an exact rank or skill 
+				 bracket of a match requires examining data of player ID's in that match, which I am not focusing on.
+				</p>
+				
+				<p>
+				<strong> What is a hero's rating? How is it calculated?</strong>
+				- Hero ratings are calculated using Wilson confidence interval lower bound.
+				This is a method of creating a combined ranking metric for data that has a 
+				measurable form of frequency (number of picks), a form of positive rating (wins),
+				and a form of negative rating (losses). The purpose is to create a metric that ranks 
+				heroes by considering both their popularity and their success rate simultaneously, rather than choosing
+				 lesser ranking methods such as most picks, most wins, difference between wins/losses, average winrate etc.
+				 which would skew results and lead to various issues such as high winrate heroes being ranked at the top 
+				 even if they only have a few picks, or high pickrate heroes being ranked at the top regardless of whether they win
+				 often or not.
+				</p>
+				
+				<p>
+				<strong> Are the results live/continuously updated? </strong>
+				- Results are not live, as I do not continuously download match data. For this analysis, I downloaded a large amount of 
+				matches all played around the same time recently, from the current game version (7.31b), making 
+				sure the sample is very large so it can be considered representative. Updating results is easily done,
+				but new results requires acquiring data constantly and potentially paying to download an unlimited number of matches to 
+				analyse, which I am not currently doing.
+				</p>
+				
+				<p>
+				<strong> What do the graphs on each page show? </strong>
+				- Graphs show a visualization of the winrates of the top 15 heroes of each metric.
+				For example, the niche heroes graph shows the top 15 winrates of niche heroes. The overrated heroes 
+				graph shows the winrates of the top 15 most popular heroes who do not have good winrates.
+				</p>
+				
+				<p>
+				<strong> Are there any results for items? </strong>
+				- Item data is available in match data, but this website currently only shows hero data. A page for item winrates 
+				may be added, as well as popular items on each hero and their win rates when buying said items.
+				</p>
+				
+			</article>
+		</section>
+		
+		
+		
+	
+	
+	</main>
+	
+	<footer>
+		<p>Made by Nick Papoutsakis</p>
+		<p>Dota 2 is a registered trademark of Valve Corporation</p>
+		<p>Match data acquired with the help of Opendota</p>
+	</footer>
+
+	
+	</body>
+	
+</html>

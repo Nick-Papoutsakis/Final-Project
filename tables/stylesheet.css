@@ -1,0 +1,49 @@
+table{
+	width: 700px;
+	border-collapse: collapse;
+	border: 1px solid;
+	border-color: black;
+	
+}
+
+.dataframe {
+	font-family: "Verdana";
+	color: #dfdff2;
+	border-color: black;
+	
+}
+
+thead{
+	text-align: center !important;
+	background-color: #0e0252;
+	border: none;
+}
+
+img{
+	border-radius: 6px;
+}
+
+th{
+	border: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+tr{
+	border-color: black;
+	text-align: center !important;
+
+}
+
+td{
+	background-color: #141326;
+	padding-left: 5px;
+	text-align: left !important;
+	border-color: #141326;
+	color: #dfdff2;
+}
+
+tbody{
+	border-color: black;
+	
+}
