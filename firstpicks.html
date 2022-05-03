@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf8">
+		<title> First Pick Heroes - Dota 2 Meta Analysis </title>
+		<link href="stylesheet.css" rel="stylesheet">
+		<link rel="icon" href="psionictrap.png">
+	</head>
+	
+	<body>
+	
+	<header>
+		<h1>Dota 2 Meta Analysis</h1>
+		<nav>
+		
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="topheroes.html">Top Heroes</a></li>
+				<li><a href="nicheheroes.html">Niche Heroes</a></li>
+				<li><a href="overratedheroes.html">Overrated Heroes</a></li>
+				<li class="active"><a href="firstpicks.html">First Picks</a></li>
+				<li><a href="lastpicks.html">Last Picks</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		
+		</nav>
+	</header>
+	
+	<main>
+		<section class="description">
+			<article>
+				<h2>First Pick Heroes</h2>
+				<p>
+				These are the statistics of heroes in the dataset when they are picked
+				first in a draft, compared to their normal winrate.
+				The top heroes of this category may be safe to pick
+				if you need something to choose without knowing your opponent's hero choices,
+				and they may also be relatively safe against counter picks.
+				</p>
+
+				<p>First pick hero winrates. </p>
+				</p>
+			</article>
+		</section>
+
+
+	<div class="sub-table" id="firstpickdifference">
+		<h3 class="table-title">Best First Pick Heroes</h3>	
+	<iframe src="tables/table5output.html" height=630, width=570>
+		Your browser doesn't support the iframe tag to display this table.
+	</iframe>
+	</div>
+	
+	<div class="graph">
+		
+		<h3 id="graph-title">By first pick winrate</h3>
+		<img id="graph-img" src="tables/firstpickheadplot.png" alt="Statistics Graph">
+		
+	</div>
+	
+	</main>
+	
+	<footer>
+		<p>Made by Nick Papoutsakis</p>
+		<p>Dota 2 is a registered trademark of Valve Corporation</p>
+		<p>Match data acquired with the help of Opendota</p>
+	</footer>
+	</body>
+	
+</html>

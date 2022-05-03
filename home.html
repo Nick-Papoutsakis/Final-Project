@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf8">
+		<title> Summary - Dota 2 Meta Analysis </title>
+		<link href="stylesheet.css" rel="stylesheet">
+		<link rel="icon" href="psionictrap.png">
+	</head>
+	
+	<body>
+	
+	<header>
+		<h1>Dota 2 Meta Analysis</h1>
+		<nav>
+		
+			<ul id="navigation">
+				<li class="active"><a href="home.html">Home</a></li>
+				<li><a href="topheroes.html">Top Heroes</a></li>
+				<li><a href="nicheheroes.html">Niche Heroes</a></li>
+				<li><a href="overratedheroes.html">Overrated Heroes</a></li>
+				<li><a href="firstpicks.html">First Picks</a></li>
+				<li><a href="lastpicks.html">Last Picks</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		
+		</nav>
+	</header>
+	
+	<main>
+		<section class="description">
+			<article>
+				<h2>Summary</h2>
+				<p>
+				This is a website to display various summary statistics for Dota 2 heroes,
+				allowing the identification of characteristics and trends of the metagame.
+				Each page displays a table containing the statistics of each hero in that
+				metric, along with associated graphs that focus on the top 10 heroes of each metric.
+				</p>
+				<p>
+				This page shows the major summary statistics of all heroes in the dataset;
+				including <strong>winrate</strong>, <strong>number of picks</strong>,
+				and a <strong>Wilson score</strong> rating to give
+				a combined measure of each hero's popularity and success. (Lower rating = better hero)
+				</p>
+			</article>
+		</section>
+		
+		
+		
+
+		
+	<div  class="table" id="alltable">
+		<h3 class="table-title">Summary - Most Popular</h3>	
+		<iframe id="all" src="tables/table1output.html" height=630, width=570>
+			Your browser doesn't support the iframe tag to display this table.
+		</iframe>
+	</div>
+	
+	<div class="graph">
+		
+			<h3 id="graph-title">Most popular heroes' winrates</h3>
+			<img id="graph-img" src="tables/summaryplot.png" alt="Statistics Graph">
+		
+		</div>
+		
+	<div class="table" id="mostpicked">
+		<h3 class="table-title">Most Picked</h3>	
+		<iframe class="smalltable" src="tables/mostpicked.html" height=230, width=570>
+			Your browser doesn't support the iframe tag to display this table.
+		</iframe>
+	</div>
+	
+	<div class="table" id="mostbanned">
+		<h3 class="table-title">Most Banned</h3>	
+		<iframe class="smalltable" src="tables/mostbanned.html" height=230, width=570>
+			Your browser doesn't support the iframe tag to display this table.
+		</iframe>
+	</div>
+	
+	<div class="table" id="leastcontested">
+		<h3 class="table-title">Least Contested</h3>	
+		<iframe class="smalltable" src="tables/leastcontested.html" height=230, width=570>
+			Your browser doesn't support the iframe tag to display this table.
+		</iframe>
+	</div>
+	
+	<div class="table" id="firstpicks">
+		<h3 class="table-title">Most Popular First Picks</h3>	
+		<iframe class="smalltable" src="tables/firstpicks.html" height=230, width=570>
+			Your browser doesn't support the iframe tag to display this table.
+		</iframe>
+	</div>
+	
+	<div class="table" id="lastpicks">
+		<h3 class="table-title">Most Popular Last Picks</h3>	
+		<iframe class="smalltable" src="tables/lastpicks.html" height=230, width=570>
+			Your browser doesn't support the iframe tag to display this table.
+		</iframe>
+	</div>
+	
+	</main>
+	
+	<footer>
+		<p>Made by Nick Papoutsakis</p>
+		<p>Dota 2 is a registered trademark of Valve Corporation</p>
+		<p>Match data acquired with the help of Opendota</p>
+	</footer>
+
+	
+	</body>
+	
+</html>
