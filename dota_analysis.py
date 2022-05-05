@@ -12,7 +12,7 @@ large_df = []
 ban_df = []
 iconlist = []
 
-for i in os.listdir("html files/tables/imagefolder"):
+for i in os.listdir("tables/imagefolder"):
     iconname = "imagefolder/" + i
     iconlist.append(iconname)
 

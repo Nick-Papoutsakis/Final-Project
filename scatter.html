@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf8">
+		<title> Summary - Dota 2 Meta Analysis </title>
+		<link href="stylesheet.css" rel="stylesheet">
+		<link rel="icon" href="psionictrap.png">
+	</head>
+	
+	<body>
+	
+	<header>
+		<h1>Dota 2 Meta Analysis</h1>
+		<nav>
+		
+			<ul id="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="topheroes.html">Top Heroes</a></li>
+				<li><a href="nicheheroes.html">Niche Heroes</a></li>
+				<li><a href="overratedheroes.html">Overrated Heroes</a></li>
+				<li><a href="firstpicks.html">First Picks</a></li>
+				<li><a href="lastpicks.html">Last Picks</a></li>
+				<li class="active"><a href="scatter.html">Scatter Plot</a></li>	
+				<li><a href="about.html">About</a></li>			 
+			</ul>
+		
+		</nav>
+	</header>
+	
+	<main>
+		<section class="description">
+			<article>
+				<h2>Meta Scatter Plot</h2>
+				<p>
+				This is a scatter plot that visualizes each hero's prevalence in the metagame
+				by representing their winrate and pickrate in relation to each other.
+				Popular heroes trend towards the right side, high winrate heroes trend towards the top.
+				Less popular and unsuccessful heroes trend towards the bottom left.
+				</p>
+				<p>
+				If you don't know what hero an icon represents, check here for a list:
+				<a href="https://dota2.fandom.com/wiki/Category:Hero_minimap_icons" target="_blank"><strong>Hero Minimap Icons</strong></a>
+				</p>
+			</article>
+		</section>
+			
+	<div class="graph">
+		
+			<h3 id="graph-title">Hero winrates and pick rates</h3>
+			<img id="scatter" src="tables/summaryscatterplot.png" alt="Statistics Graph">
+		
+		</div>
+			
+	</main>
+	
+	<footer>
+		<p>Made by Nick Papoutsakis</p>
+		<p>Dota 2 is a registered trademark of Valve Corporation</p>
+		<p>Match data acquired with the help of Opendota</p>
+	</footer>
+
+	
+	</body>
+	
+</html>
