@@ -259,22 +259,28 @@ large_df_overrated = overrated(large_df_combined)
 
 #First picked heroes' winrates
 firstpicks = large_df[(large_df.order.isin([0,1,2,3]))]
+firstcount = firstpicks.hero_id.value_counts()
+firstkeep = firstcount[firstcount > 50].index
+firstpicks = firstpicks[firstpicks.hero_id.isin(firstkeep)]
 firstpickwinrate = firstpicks.groupby(["hero_id", "localized_name", "icons"])["win"].mean().reset_index(name = "firstpick_winrate")
 firstpickwinrate.firstpick_winrate = firstpickwinrate["firstpick_winrate"] * 100
 firstpickwinrate.firstpick_winrate = firstpickwinrate["firstpick_winrate"].round(2)
 
 firstpickdifference = pd.merge(large_df_winrate, firstpickwinrate)
 firstpickdifference["difference"] = firstpickdifference.firstpick_winrate - firstpickdifference.winrate
-firstpickdifference.sort_values("firstpick_winrate", inplace = True, ascending = False)
+firstpickdifference.sort_values("difference", inplace = True, ascending = False)
 iconsfirst(firstpickdifference)
 
 #Last picked heroes' winrates
 lastpicks = large_df[(large_df.order.isin([8,9,10,11]))]
+lastcount = lastpicks.hero_id.value_counts()
+lastkeep = lastcount[lastcount > 50].index
+lastpicks = lastpicks[lastpicks.hero_id.isin(lastkeep)]
 lastpickwinrate = lastpicks.groupby(["hero_id", "localized_name", "icons"])["win"].mean().reset_index(name = "lastpick_winrate")
 lastpickwinrate.lastpick_winrate = lastpickwinrate["lastpick_winrate"] * 100
 lastpickwinrate.lastpick_winrate = lastpickwinrate["lastpick_winrate"].round(2)
 
 lastpickdifference = pd.merge(large_df_winrate, lastpickwinrate, )
 lastpickdifference["difference"] = lastpickdifference.lastpick_winrate - lastpickdifference.winrate
-lastpickdifference.sort_values("lastpick_winrate", inplace = True, ascending = False)
+lastpickdifference.sort_values("difference", inplace = True, ascending = False)
 iconsfirst(lastpickdifference)

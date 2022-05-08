@@ -13,9 +13,9 @@ def get_match_data(match_id):
         file.close()
 
 #match_id = 6514142739
-match_id = 6514167728
+match_id = 6514191614
 
-for i in range(0, 5000):
+for i in range(0, 4000):
     get_match_data(match_id + i)
     time.sleep(2)
 
